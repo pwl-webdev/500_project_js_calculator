@@ -1,0 +1,41 @@
+body, html{
+	height: 95%;
+	position: relative;
+}
+.container{
+	box-sizing: border-box;
+	position: relative;
+	top: 30%;
+	width: 256px;
+	margin: auto;
+	background-color: rgb(100,100,100);
+	overflow: auto;
+}
+.display{
+	height: 30px;
+	margin: 2px;
+	border: 2px solid rgb(230,230,230);
+}
+.numberKey, .functionKey, .clearKey{
+	width: 60px;
+	height: 60px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 60px;
+	vertical-align: middle;
+	font-size: 26px;
+	font-family: "Helvetica";
+	background-color: rgb(230,230,230);
+	border-radius: 3px;
+	margin: 2px;
+	float: left;
+	display: inline-block;
+}
+.clearKey{
+	box-sizing: border-box;
+	width: 252px;
+}
+.numberKey:hover, .functionKey:hover, .clearKey:hover{
+	/*background-color: rgb(200,200,230);*/
+	background: radial-gradient(ellipse at center, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+}
