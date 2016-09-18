@@ -5,16 +5,23 @@ body, html{
 .container{
 	box-sizing: border-box;
 	position: relative;
-	top: 30%;
-	width: 256px;
+	top: 20%;
+	width: 296px;
 	margin: auto;
+	padding: 20px;
 	background-color: rgb(100,100,100);
 	overflow: auto;
+	border-radius: 10px;
 }
-.display{
+#display{
+	box-sizing: border-box;
 	height: 30px;
 	margin: 2px;
 	border: 2px solid rgb(230,230,230);
+	font-size: 22px;
+	color: white;
+	vertical-align: middle;
+	font-family: "Helvetica";
 }
 .numberKey, .functionKey, .clearKey{
 	width: 60px;
@@ -38,4 +45,26 @@ body, html{
 .numberKey:hover, .functionKey:hover, .clearKey:hover{
 	/*background-color: rgb(200,200,230);*/
 	background: radial-gradient(ellipse at center, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+}
+header{
+	position: absolute;
+	top: 10%;
+	margin: auto;
+	font-size: 26px;
+	font-family: "Helvetica";
+	color: rgb(100,100,100);
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	margin: auto;
+	font-size: 12px;
+	font-family: "Helvetica";
+	color: rgb(100,100,100);
+	left:0;
+	right: 0;
+	text-align: center;
 }
