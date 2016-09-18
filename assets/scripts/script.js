@@ -48,7 +48,7 @@ $(document).ready(function(){
 	  refresh_display(input);
 	});
 	$( "#0" ).click(function() {
-		if(input.length == 0 ||  ["1","2","3","4","5","6","7","8","9","+","-","x","/","."].indexOf(input[input.length-1]) > -1  || dotAlready){
+		if(input.length == 0 ||  ["1","2","3","4","5","6","7","8","9","+","-","x","/","."].indexOf(input[input.length-1].toString()) > -1  || dotAlready){
 	  		console.log("0");
 	  		input.push(0);
 	  		refresh_display(input);
@@ -79,7 +79,9 @@ $(document).ready(function(){
 	  dotAlready = false;
 	});
 	$( "#period" ).click(function() {
-		if(!dotAlready){
+		console.log("!dot already "+!dotAlready);
+		console.log("index of "+["1","2","3","4","5","6","7","8","9","0"].indexOf(input[input.length-1].toString()));
+		if(!dotAlready && ["1","2","3","4","5","6","7","8","9","0"].indexOf(input[input.length-1].toString()) > -1 ){
 	  		console.log("period");
 	  		input.push(".");
 	  		refresh_display(input);
